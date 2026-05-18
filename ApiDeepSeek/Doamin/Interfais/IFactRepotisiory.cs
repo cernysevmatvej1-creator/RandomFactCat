@@ -1,5 +1,6 @@
 ﻿using ApiDeepSeek.Common;
-using ApiDeepSeek.Models;
+using ApiDeepSeek
+    .Models;
 
 namespace ApiDeepSeek.Doamin.Interfais
 {

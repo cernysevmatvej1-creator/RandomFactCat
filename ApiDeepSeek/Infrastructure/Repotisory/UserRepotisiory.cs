@@ -1,4 +1,5 @@
 ﻿using ApiDeepSeek.Common;
+using ApiDeepSeek.Doamin.Efenties_Models.ApiDeepSeek.Doamin.Efenties_Models;
 using ApiDeepSeek.Doamin.Interfais;
 using ApiDeepSeek.models;
 using GroupApi.Data;
@@ -34,6 +35,24 @@ namespace ApiDeepSeek.Infrastructure.Repotisory
                 .FirstOrDefaultAsync(u => u.UserName == username);
 
             return Result<User>.Ok(user);
+        }
+        public async Task <Result<User>> GetUser(string userId)
+        {
+            var user = await _context.Users
+              .FirstOrDefaultAsync(u => u.UserId == userId);
+
+            return Result<User>.Ok(user);
+        }
+        public void SaveUserRoles(UserRole userRole)
+        {
+            _context.UserRoles.Add(userRole);
+            _context.SaveChanges(); 
+        }
+        public async Task<List<UserRole>> FirstUserRoles(string userId) 
+        {
+            return await _context.UserRoles
+                .Where(u => u.UserId == userId)
+                .ToListAsync();
         }
 
     }

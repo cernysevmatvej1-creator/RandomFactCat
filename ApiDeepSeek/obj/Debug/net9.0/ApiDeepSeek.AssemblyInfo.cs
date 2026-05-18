@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiDeepSeek")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a6c49b9d8e9664d77be68539979baedc083a22d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiDeepSeek")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiDeepSeek")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

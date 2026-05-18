@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ApiDeepSeek.Models;
 using ApiDeepSeek.models;
+using ApiDeepSeek.Doamin.Efenties_Models;
+using ApiDeepSeek.Doamin.Efenties_Models.ApiDeepSeek.Doamin.Efenties_Models;
 
 namespace GroupApi.Data
 {
@@ -11,5 +13,11 @@ namespace GroupApi.Data
 
         public DbSet<Answer> Answers { get; set; }
         public DbSet<User> Users {  get; set; }
+        public DbSet<RefreshToken> RTokens { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Permission> Permissions { get; set; }
+        public DbSet<RolePermission> RolePermissions { get; set; }
+        public DbSet<UserPermission> UserPermissions { get; set; }  
     }
 }

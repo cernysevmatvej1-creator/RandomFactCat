@@ -25,7 +25,9 @@ namespace ApiDeepSeek.Infrastructure.Repotisory
 
         public async Task SaveFact(Answer answer)
         {
+            answer.CreatedAt = DateTime.UtcNow;
             _context.Answers.Add(answer);
+            
             _context.SaveChanges();
         }
     }

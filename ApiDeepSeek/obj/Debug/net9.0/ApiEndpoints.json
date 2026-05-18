@@ -1,6 +1,53 @@
 [
   {
     "ContainingType": "GroupApi.Controllers.AnswersController",
+    "Method": "TestAdmin",
+    "RelativePath": "api/Answers/admin-test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GroupApi.Controllers.AnswersController",
+    "Method": "EditFact",
+    "RelativePath": "api/Answers/edit-fact/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newText",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GroupApi.Controllers.AnswersController",
+    "Method": "DeleteFact",
+    "RelativePath": "api/Answers/factdelete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GroupApi.Controllers.AnswersController",
     "Method": "GetAll",
     "RelativePath": "api/Answers/facts-user",
     "HttpMethod": "GET",
@@ -20,6 +67,38 @@
       {
         "Name": "user",
         "Type": "ApiDeepSeek.models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GroupApi.Controllers.AnswersController",
+    "Method": "PayPrime",
+    "RelativePath": "api/Answers/pay-prime",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "autr",
+        "Type": "ApiDeepSeek.Doamin.Efenties_Models.AutrResult",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GroupApi.Controllers.AnswersController",
+    "Method": "NewRefresh",
+    "RelativePath": "api/Answers/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "autrResult",
+        "Type": "ApiDeepSeek.Doamin.Efenties_Models.AutrResult",
         "IsRequired": true
       }
     ],
